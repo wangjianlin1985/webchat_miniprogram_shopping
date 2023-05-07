@@ -1,0 +1,145 @@
+/**index.wxss**/
+page{
+    height: 100%;
+}
+    .search{
+     padding :20rpx 0;
+	display: flex;
+  	flex-direction: row;
+  	height: 50rpx;
+	align-items: center;
+      background: #ff5a5f;
+}
+
+.search .scan{
+	display: flex;
+  	flex-direction: column;
+	align-items: center;
+	width: 10%;
+  
+}
+
+.search .search-input{
+	padding: 5rpx;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 80%;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:5px;
+	align-items: center;
+}
+
+.search-icon{
+	width: 30rpx;
+	height: 30rpx;
+}
+.serach-text{
+    font-size: 12px;
+}
+
+/*导航*/
+.swiper-box {
+    height:375rpx;
+}
+.slide-image{
+    display: block;
+    height: 375rpx;
+    width:100%
+}
+
+
+/*hg-*/
+.hg-container{
+   height:360rpx;
+   margin-top: 20px;
+}
+.gooditem{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap:wrap;
+}
+.hg-title{
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    color: #008842;
+}
+.imgview{
+    border: 1px solid #eee;
+    width: 355rpx;
+    margin-top: 10px;
+}
+.gooditem  :nth-child(even){
+    margin-left: 34rpx;
+}
+
+
+.imgview image{
+    width: 100%;
+    height: 400rpx;
+    border-bottom: 1px solid #eee;
+}
+.imgview_title{
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+    margin-left: 10rpx;
+    text-overflow: ellipsis;
+    font-weight: normal;
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    overflow: hidden;
+}
+.imgview_price{
+    color: #ff480a;
+    font-style: normal;
+    font-size: 14px;
+      position: relative;
+     left: -24rpx;
+   
+}
+.imgview_fon{
+     width: 100%;
+     position: relative;
+     left: -34rpx;
+     background: #f4f4f4;
+    margin-right: 34rpx;
+}
+.hot-container{
+    background: #eee;
+}
+.hot-title{
+    padding: 10px;
+    font-size: 16px;
+    color: #f55030;
+    background: #fff;
+}
+.hot-imgview{
+    margin-top: 10px;
+}
+.hot-imgview image{
+    width: 100%;
+    height: 280rpx;
+}
+/*footer*/
+.footer{
+   text-align: center;
+    height: 200rpx;
+}
+.footer view{
+    width: 700rpx;
+   
+}
+.footer text{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: #aaaaaa;
+    font-size: 12px;
+}

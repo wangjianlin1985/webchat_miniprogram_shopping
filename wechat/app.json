@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/shop/login/login",
+    "pages/shop/index/index",
+    "pages/shop/pay/pay",
+    "pages/shop/pay/login",
+    "pages/shop/pay/privilege", 
+    "pages/shop/order/order",
+    "pages/shop/detail/detail",
+    "pages/shop/list/list",
+    "pages/shop/cart/cart",
+    "pages/shop/mine/mine",
+    "pages/shop/classify/index",
+    "pages/shop/pay/paycomment",
+    "pages/shop/paycomment/paycomment",
+    "pages/yiguo/pay/pay",
+    "pages/shop/res/res",
+    "pages/shop/gg/gg",
+    "pages/shop/common/success"
+  ],
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#333",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/shop/index/index",
+        "iconPath": "images/icons/btn-tabs_01.png",
+        "selectedIconPath": "images/icons/btn-tabs_07.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shop/classify/index",
+        "iconPath": "images/icons/btn-tabs_03.png",
+        "selectedIconPath": "images/icons/btn-tabs_08.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/shop/cart/cart",
+        "iconPath": "images/icons/btn-tabs_05.png",
+        "selectedIconPath": "images/icons/btn-tabs_09.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/shop/order/order",
+        "iconPath": "images/icons/btn-tabs_05.png",
+        "selectedIconPath": "images/order.png",
+        "text": "我的订单"
+      },
+      {
+        "pagePath": "pages/shop/mine/mine",
+        "iconPath": "images/icons/btn-tabs_06.png",
+        "selectedIconPath": "images/icons/btn-tabs_10.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "电商",
+    "navigationBarTextStyle": "white"
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

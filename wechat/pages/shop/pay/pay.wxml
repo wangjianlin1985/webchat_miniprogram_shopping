@@ -1,0 +1,51 @@
+<view class="container">
+  <view class="header">
+    <image class="home" src="{{img_url}}pay/home.png"></image>
+    <view class="title">
+      <text>支付信息</text>
+    </view>
+  </view>
+  <view class="wrapper">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="content">
+        <view class="top">
+          <text class="top-price">姓名：</text>
+          <input class="top-num" type="digit"  focus="{{focus}}" 
+          
+          bindfocus="paymentTap"  bindinput="name1" value="{{name}}" bindblur="payloseTap"></input>
+        </view>
+      <view class="top">
+          <text class="top-price">联系方式：</text>
+          <input class="top-num" type="digit"  focus="{{focus}}" bindfocus="paymentTap" value="{{phone}}"
+           bindblur="payloseTap" bindinput="phone1"></input>
+        </view>
+        <view class="top">
+          <text class="top-price">收货地址：</text>
+          <input class="top-num" type="digit"  focus="{{focus}}" value="{{address}}" bindfocus="paymentTap" bindblur="payloseTap"
+          bindinput="address1"
+          ></input>
+        </view>
+      
+       
+        <view class="footer" style="bottom:0">
+          <view class="pay-type">
+            <view class="pay-ul">
+              <view class="pay-li" bindtap="paycommentTap">
+                <view class="pay-a">
+                  <image class="pay-img" src="{{img_url}}detail/qb-icon.png" />
+                  <text class="pay-tx">其他支付</text>
+                </view>
+              </view>
+              <view class="pay-li" bindtap="paycommentTap">
+                <view class="pay-a">
+                  <image class="pay-img" src="{{img_url}}detail/wx-icon.png" />
+                  <text class="pay-tx">微信支付</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>

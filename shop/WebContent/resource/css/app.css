@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+/*base*/
+body{background: #ededed;}
+.mt20{margin-top:20px;}
+.dy-bac-fff{background: #fff; border:1px solid #e1e1e2; margin-bottom: 1.6rem;}
+.tf-img{margin-left: 20px;}
+.pl10{padding-left: 10px;}
+.dy-topbar{margin:0px; margin-bottom: 1.6rem;}
+.mt60{margin-top:60px;}
+a, a::before, a::after,img, img::before, img::after {
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
+.dy-container{max-width: 1100px;}
+
+/*header*/
+.header-top{padding:10px 0;}
+.dy-topbar-inverse{background: #c11976; border:none;}
+.dy-topbar-nav > li > a::after{border:none; border-style: none;}
+/*.dy-topbar-nav > li > a{min-width: 90px; text-align: center;}*/
+.dy-btn-success{background: #ad1669; border:none;}
+.dy-btn-success:hover,.dy-btn-success:focus{background: #a91265; border:none;}
+.dy-topbar .dy-text-ir{font-weight:bolder; font-size: 1.8rem;}
+
+.dy-da{margin-top:15px;}
+.dy-da img{border:1px solid #e1e1e2; margin-right: 10px;}
+.dy-da a{color:#676666; font-size: 1.6rem;}
+.dy-da p{color:#9fa1a6;font-size: 1.4rem;}
+
+.pian a{color:#c11976;}
+
+#news dl dt{
+	height:40px;
+	line-height: 40px;
+	border-bottom: 1px solid #e1e1e2;
+}
+
+#news dl dt a{
+	display: inline-block;
+	border-right: 1px solid #e1e1e2;
+	color:#676666;
+	width:40px;
+}
+
+#news dl dd{
+	padding: 0 15px 15px 15px;
+}
+
+#news .news dl dd ul li a{
+	display:inline-block;
+	float: left;
+	line-height: 27px;
+	color:#676666;
+}
+
+#news .news dl dd ul li{
+	height:27px;
+	line-height: 27px;
+	color:#9a9a9a;
+	text-align: right;
+}
+
+.tf-pic li{padding: 5px;}
+
+.tucao dd{padding: 8px 20px 10px 20px !important}
+.tucao img{border:1px solid #e1e1e2;}
+
+.link a{padding: 0px 5px; color:#676666;}
+
+#news a:hover{color:#c11976 !important;}
+
+#footer{margin-top:20px;}
+#footer a{ color:#dddddd;}
+#footer a:hover{color:yellow !important;}
+.dy-gotop-fixed{width: 50px; bottom: 40px;}
+
+.dy-breadcrumb{padding: 0px !important;}
+.dy-breadcrumb > li + li::before,.dy-breadcrumb a{color:#333; font-size:1.4rem;}
+.dy-breadcrumb .dy-active{color:#c11976; font-size:1.4rem;}
+
+.tf-lists .item{
+	background: #fff;
+	border:1px solid #e1e1e2;
+	padding: 0.8rem 0px;
+	margin-bottom: 1.5rem;
+}
+
+.tf-lists .item a{
+	color:#333;
+	font-size: 1.6rem;
+}
+
+.tf-lists .item a:hover{
+	color:#c11976;
+}
+
+.tf-lists .item p{
+	color:#919191;
+}
+
+.tf-icon{
+	font-size: 1.3rem;
+	color:#ccc;
+	margin-top: 5px;
+}
+
+.dy-pagination > .dy-active > a, .dy-pagination > .dy-active > span, .dy-pagination > .dy-active > a:hover, .dy-pagination > .dy-active > span:hover, .dy-pagination > .dy-active > a:focus, .dy-pagination > .dy-active > span:focus{
+	background: #c11976;
+	border:none;
+}
+
+.dy-list-news-default .dy-list .dy-list-item-desced{
+	padding: 1rem;
+}
+
+.dy-list-news-default{margin:0px;}
+
+.tf-content{
+	background: #fff;
+	padding: 0.8rem 1.5rem;
+	border:1px solid #e1e1e2;
+	margin-bottom: 1.5rem;
+}
+
+.tf-content .tf-title{font-size:2.5rem;}
+.tf-content .neirong{margin-top: 1.5rem; overflow: hidden;}
+.tf-content .neirong img{
+	display: block;
+    height: auto;
+    max-width: 100%;
+}
+.tf-content .tf-icon{
+	border-bottom: 1px solid #e1e1e2;
+	padding: 1.5rem 0;
+}
+
+
+@media only screen and (min-width:641px) {
+  #footer .footer-top{background: #c11976; height: 38px; line-height:38px; color:#fff;}
+  #footer .footer-top a{margin-right:10px;}
+  #footer .footer-bottom{background: #3f3c41; height: 79px; line-height: 79px; color:#d0d0d0;}
+  .dy-padding{padding-top:0.8rem; padding-bottom:0.8rem;}
+  .dy-padding1{padding: 0.8rem;}
+  .picc [class*="dy-u-"]{padding: 0 0.8rem;}
+  .picc .imgss{margin-top: 15px;}
+  .dys-show-sm{display: none !important;}
+  [class*="dy-u-"]{padding: 0px 0.8rem;}
+
+}
+
+@media only screen and (max-width:641px) {
+  #footer .footer-top{background: #c11976; padding: 5px 0px; min-height: 38px; line-height: 180%; color:#fff;}
+  #footer .footer-top a{margin-right:10px;}
+  #footer .footer-bottom{background: #3f3c41; padding: 5px 0px; min-height: 79px; line-height: 180%;color:#d0d0d0;}
+  .dys-show-md{display: none !important;}
+
+}
+
+
+
+
+
+
+

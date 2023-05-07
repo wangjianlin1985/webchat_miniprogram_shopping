@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="nav_left">
+    <block wx:for="{{navLeftItems}}">
+      <view class="nav_left_items {{curNav == item.id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.lb.id}}">{{item.lb.name}}</view>
+    </block>
+  </view>
+  <view class="nav_right">
+    <view wx:if="{{navRightItems}}">
+      <block wx:for="{{navRightItems}}" wx:for-item="pp">
+        <view class="nav_right_items">
+         <navigator url="/pages/shop/list/list?ppId={{pp.id}}">
+            <view data-id="{{pp.id}}">
+              <block wx:if="{{pp.cpUrl}}">
+                <image src="{{pp.cpUrl}}"></image>
+              </block>
+              <block wx:else>
+                <image src="http://temp.im/50x30"></image>
+              </block>
+            </view>
+            <view wx:if="{{pp.name}}">
+              <text>{{pp.name}}  </text>
+            </view>
+            </navigator>
+        </view>
+      </block>
+    </view>
+    <view wx:else>暂无数据</view>
+  </view>
+</view>

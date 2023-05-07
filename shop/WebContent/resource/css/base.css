@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+/*重置默认样式*/
+/*---------------------base reset--------------------------*/
+/*使其容器如DIV的内容自动换行*/
+*{word-wrap:break-word}
+
+/*去掉内外边距-内外边距通常让各个浏览器样式的表现位置不同*/ 
+html,body,h1,h2,h3,h4,h5,h6,hr,p,iframe,dl,dt,dd,ul,ol,li,pre,form,button,input,textarea,th,td,fieldset{
+	margin:0;padding:0
+}
+
+/*去掉列表标签的默认样式*/
+ul,ol,dl{list-style-type:none}
+
+/*防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */  
+html{
+	-webkit-text-size-adjust:100%; /*禁用Webkit内核浏览器的文字大小调整功能，默认是auto；*/
+	-ms-text-size-adjust:100%; /*禁用IE内核浏览器的文字大小调整功能，默认是auto；*/
+	font-family: sans-serif; /* 1 */
+  	-webkit-font-smoothing: antialiased;
+}
+
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+button{overflow: visible;vertical-align:middle;outline:none}
+body,th,td,button,input,select,textarea{
+  font-family:"微软雅黑","Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"WenQuanYi Micro Hei","\5B8B\4F53";
+  font-size:14px;
+  color: #333;
+  -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased
+}
+body{
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  text-align:left;
+}
+hr{
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+h1,h2,h3,h4,h5,h6{font-size:100%}
+a,area{outline:none;blr:expression(this.onFocus=this.blur())}
+a{text-decoration:none;cursor: pointer}
+a:hover{text-decoration:none;outline:none}
+a.ie6:hover{zoom:1}
+a:focus{outline:none}
+a:hover,a:active{outline:none}:focus{outline:none}
+sub,sup{vertical-align:baseline}
+
+/*img自适应*/
+.tf-img-responsive{max-width: 100%;height: auto}
+
+/*IE下a:hover 背景闪烁*/
+html{overflow:-moz-scrollbars-vertical;zoom:expression(function(ele){ele.style.zoom = "1";document.execCommand("BackgroundImageCache",false,true)}(this))}
+
+
+/*重置table样式*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,th {
+  padding: 0;
+}
+
+img{border:none;}
+
+/*---------------------HTML5 reset--------------------------*/
+header,footer,section,aside,details,menu,article,section,nav,address,hgroup,figure,figcaption,legend{display:block;margin:0;padding:0}time{display:inline}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+audio:not([controls]){display:none}
+svg:not(:root) {overflow: hidden}
+fieldset {
+	border-width:0;
+	padding: 0.35em 0.625em 0.75em;
+	margin: 0 2px;
+	border: 1px solid #c0c0c0
+}
+legend{
+	margin-bottom:10px;
+	font-size:21px;
+	line-height:40px;
+	border:0;
+	padding: 0 10px;
+}
+legend small{font-size:15px;color:#999}
+
+
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {height: auto}
+input[type="search"] {-webkit-appearance: textfield; /* 1 */-moz-box-sizing: content-box;-webkit-box-sizing: content-box; /* 2 */box-sizing: content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {-webkit-appearance: none}
+
+/* HTML5 媒体文件跟 img 保持一致 */  
+audio,canvas,video {  
+    display: inline-block;*display: inline;*zoom: 1;  
+} 
+
+/*HTML5新模块元素在IE8、9版本浏览器中没有被定义默认样式。为解决该问题，给下列元素添加“block”显示属性*/
+article,  
+aside,  
+details,  
+figcaption,  
+figure,  
+footer,  
+header,  
+hgroup,  
+main,  
+nav,  
+section,  
+summary {  
+    display: block;  
+}
+
+
+/*
+	Name:			clearfloat清除浮动
+	Example:		class="clearfloat/cl"
+	Explain:		clearfloat（简写cl）避免因子元素浮动而导致的父元素高度缺失能问题
+	使用方法：      <ul class="clearfloat">
+						<li class="fl"></li>
+						<li class="fl"></li>
+					</ul>
+*/
+.cl:after,.clearfloat:after,.container:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden
+}
+.cl,.clearfloat,.container{zoom:1}
+
+/**外边距**/
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml14{margin-left:14px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml25{margin-left:25px;}
+.ml30{margin-left:30px;}
+.ml35{margin-left:35px;}
+.ml40{margin-left:40px;}
+.ml55{margin-left:55px;}
+.ml60{margin-left:60px;}
+.ml70{margin-left:70px;}
+.ml90{margin-left:90px;}
+
+.mt3{margin-top:3px;}
+.mt4{margin-top:4px;}
+.mt5{margin-top:5px;}
+.mt8{margin-top:8px;}
+.mt10{margin-top:10px;}
+.mt12{margin-top:12px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+.mt25{margin-top:25px;}
+.mt30{margin-top:30px;}
+.mt35{margin-top:35px;}
+.mt40{margin-top:40px;}
+.mt50{margin-top:50px;}
+.mt60{margin-top:60px;}
+
+.mr5{margin-right:5px;}
+.mr10{margin-right:10px;}
+.mr15{margin-right:15px;}
+.mr20{margin-right:20px;}
+.mr25{margin-right:25px;}
+.mr30{margin-right:30px;}
+.mr50{margin-right:50px;}
+
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.mb20{margin-bottom:20px;}
+.mb25{margin-bottom:25px;}
+.mb30{margin-bottom:30px;}
+.mb40{margin-bottom:40px;}
+
+
+/**内边距**/
+.pl5{padding-left:5px;}
+.pl10{padding-left:10px;}
+.pl15{padding-left:15px;}
+.pl20{padding-left:20px;}
+.pl25{padding-left:25px;}
+.pl30{padding-left:30px;}
+
+.pr5{padding-right:5px;}
+.pr10{padding-right:10px;}
+.pr15{padding-right:15px;}
+.pr20{padding-right:20px;}
+.pr25{padding-right:25px;}
+.pr30{padding-right:30px;}
+
+.pt5{padding-top:5px;}
+.pt10{padding-top:10px;}
+.pt15{padding-top:15px;}
+.pt20{padding-top:20px;}
+.pt25{padding-top:25px;}
+.pt30{padding-top:30px;}
+.pt40{padding-top:40px;}
+
+.pb5{padding-bottom:5px;}
+.pb10{padding-bottom:10px;}
+.pb15{padding-bottom:15px;}
+.pb20{padding-bottom:20px;}
+.pb25{padding-bottom:25px;}
+.pb30{padding-bottom:30px;}
+.pb40{padding-bottom:40px;}
+
+/*隐藏*/
+.tf-hidden{display:none;}
+
+.clear{clear: both;}
+/*浮动*/
+.tf-fl,.fl{float:left; display:block;}
+.tf-fr,.fr{float:right; display:block;}
+
+/*垂直居中*/
+.vmidlle{vertical-align: middle;}
+
+/*左右*/
+.tf-tl{text-align: left;}
+.tf-tr{text-align: right;}
+.tf-tc{text-align: center;}
+
+/*字体*/
+.f12{font-size: 12px;}
+.f14{font-size: 14px;}
+.f16{font-size: 16px;}
+.f20{font-size:20px;}
+.f30{font-size:30px;}
+.f25{font-size:25px;}
+.f60{font-size:60px;}
+
+
+/*颜色*/
+.tf-blue{color:#279cf7;}
+.tf-yellow{color:#ffe800;}
+.tf-hui1{color:#9a9a9a;}
+a{color:#666;}
+a:hover{color:#666;}

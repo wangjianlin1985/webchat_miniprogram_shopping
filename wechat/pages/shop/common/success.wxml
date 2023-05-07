@@ -1,0 +1,11 @@
+<view class="success-body">
+  <view class="success-body">
+    <image src="../../image/success.png"></image>
+  </view>
+  <view class="success-text">
+    <text>{{ts}}</text>
+  </view>
+  <view class="success-button">
+    <button type="primary" bindtap="qd">确定</button>
+  </view>
+</view>

@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="search">
+        <view class="scan">
+        </view>
+        <view class="search-input">
+            <image class="search-icon" src="../../../images/ath.png" mode="aspectFit"  bindtap="search" />
+            <input class="serach-text" placeholder="搜索商品" value="{{search}}" bindinput="searchinput"/>
+        </view>
+        <view class="scan">
+        </view>
+    </view>
+
+
+<scroll-view class="container" scroll-y="true" scroll-into-view="{{toView}}"  scroll-top="{{scrollTop}}" bindscroll="scroll">
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-box" id="top">
+  <block wx:for-items="{{banner_list[0].banner}}" wx:key="index">
+    <swiper-item >
+      <image class="slide-image" src="{{item.pic_url}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='hg-container' id="new" >
+  <text class="hg-title">新品推荐</text>
+        <view class='gooditem'>
+            <view class='imgview' wx:key="index"  wx:for="{{newgoods2}}" wx:for-index="idx" wx:for-item="good" bindtap="lookdetail" data-id="{{good.id}}" >
+              <view class="">
+                  <image class='productimg' src="{{good.url1}}"/>
+              </view>
+              <view class="imgview_fon">
+                  <view class="imgview_title">{{good.title}}</view>
+                  <view class="imgview_price">￥{{good.price}}</view>
+              </view>
+            </view>
+        </view>
+</view>
+</scroll-view>

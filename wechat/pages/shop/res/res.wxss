@@ -1,0 +1,25 @@
+@import "../common/lib/weui.wxss";
+
+label {
+  display: inline-block;
+  min-width: 270rpx;
+  margin-right: 20rpx;
+}
+form{
+  width: 100%;
+}
+.picker-text {
+  margin-left: 20rpx;
+  position: relative;
+}
+.delu{
+  margin-top: 30px
+}
+.classname .imggg{
+  width: 750rpx;
+}
+.ull{
+  margin-top: 30rpx;
+  font-size: 12px;
+  color: red;
+}

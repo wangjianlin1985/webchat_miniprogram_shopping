@@ -1,0 +1,61 @@
+
+<import src="../common/head.wxml" />
+<import src="../common/foot.wxml" />
+<view class="container">
+ 
+  <view class="page-body">
+    <view class="classname">
+    <image src="../../../images/ff.jpeg" class="imggg"></image>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">用户名</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="text" placeholder="请输入用户名" name="name"  bindinput="nameInput" value='{{name}}'></input>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">密码</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="text" placeholder="请输入密码"  name="pass" password value='{{pass}}'  bindinput="passwordInput"></input>
+          </view>
+        </view>
+      
+       <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">手机号</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="text" placeholder="请输入手机号" name="phone"  bindinput="phoneInput" value='{{phone}}'></input>
+          </view>
+        </view>
+
+         <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">姓名</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="text" placeholder="请输入姓名" name="name"  bindinput="realNameInput" value='{{realName}}'></input>
+          </view>
+        </view>
+        </view>
+      <view class="btn-area delu">
+        <button type="primary" bindtap="denglu">注册</button>
+      </view>
+    </view>
+  </view>
+ 
+ <ul class="ull" bindtap="toLog">
+  <li>
+    已有账号去登陆
+  </li>
+ </ul>
+
+  
+</view>
+ 

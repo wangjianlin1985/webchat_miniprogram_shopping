@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="pay-info">
+    <view class="info-state">
+     <icon class="icon" type="success" size="24" color="#FF7E01" />
+     <text>支付成功</text>
+    </view>
+    <text class="state-h">7咖啡饮品休闲店</text>
+    <text class="state-b">475.00元</text>
+    </view>
+  <form>
+    <view class="title">
+      <text class="title-h">继续购买</text>
+    </view>
+    
+  
+    <button class="btn" type="warn">匿名评价</button>
+  </form>
+</view>

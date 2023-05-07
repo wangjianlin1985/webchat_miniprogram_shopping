@@ -1,0 +1,25 @@
+
+.success-body{
+    margin-top:150rpx;
+      font-family: "-apple-system-font, "Helvetica Neue", sans-serif";
+}
+.success-body image{
+    height: 200rpx;
+    width: 200rpx;
+    margin: 0 auto;
+    display: block;
+}
+.success-text{
+    margin: 0 auto;
+    margin-top: 100rpx;
+    width: 80%;
+    text-align: center;
+}
+.success-button{
+margin:70rpx auto;
+color:#FFFFFF;
+background-color:#1AAD19;
+border-radius:5px;
+width: 90%;
+font-size: 36rpx;
+}

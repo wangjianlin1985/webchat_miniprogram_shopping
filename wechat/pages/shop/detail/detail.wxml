@@ -1,0 +1,39 @@
+<view class="detail-box">
+
+    <view class="detail-list">
+        <scroll-view scroll-y="true" style="height: 100%;">
+            <view class="topTal">
+            <swiper indicator-dots="true" indicator-active-color="red"
+            autoplay="true" interval="5000" duration="true" class="swiper-box" id="top">
+            <block wx:for-items="{{Obj.list}}" wx:key="index">
+                <swiper-item >
+                <image class="slide-image" src="{{item}}"/>
+                </swiper-item>
+            </block>
+</swiper>
+            </view>
+            <view class="detail-name">
+                <ul>
+                    <li>{{Obj.title}}</li>
+                    <li class="listFont">￥{{Obj.price}}</li>
+                  
+                </ul>
+            </view>
+            <view class='hot-container'>
+
+
+         
+</view>
+            </scroll-view>
+    </view>
+ <view class="detail-footer">
+    <view class="detail-1"></view>
+    <view class="detail-2"></view>
+    <view class="detail-2"></view>
+    <view class="detail-4" bindtap="addCar"><text>加入购物车</text></view>
+ </view>
+
+ <view class="bd" bindtap="calling"><text class="myt">拨打客服</text></view>
+</view>
+
+
